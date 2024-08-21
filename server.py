@@ -1,7 +1,7 @@
 import socket
 import threading
 
-# Function to handle client connections
+
 def handle_client(client_socket, client_address):
     print(f"New connection from {client_address}")
     while True:
@@ -12,10 +12,10 @@ import threading
 from cryptography.fernet import Fernet
 from crypto_utils import encrypt_message, decrypt_message
 
-# Key should be securely generated and shared beforehand
-key = b'mysecretkeygeneratedbyfernet'  # Replace with your generated key
 
-# Function to handle client connections
+key = b'mysecretkeygeneratedbyfernet'  
+
+
 def handle_client(client_socket, client_address):
     print(f"New connection from {client_address}")
     while True:
@@ -60,10 +60,10 @@ while True:
     client_socket.close()
     clients.remove(client_socket)
 
-# Create an IPv4 socket using TCP
+
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Bind the socket to an address and port
+
 server_socket.bind(('localhost', 12345))
 
 # Listen for incoming connections
