@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
 from crypto_utils import encrypt_message, decrypt_message
 
 # Key should be securely shared beforehand
-key = b'mysecretkeygeneratedbyfernet'  # Replace with your generated key
+key = b'mysecretkeygeneratedbyfernet'  
 
 def receive_messages(client_socket):
     while True:
